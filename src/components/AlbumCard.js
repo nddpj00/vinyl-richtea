@@ -11,16 +11,16 @@ function AlbumCard(props) {
   // }, [albumData]);
 
   return (
-    <div className="col-md">
-      <div className="card w-100 m-1 bg-success-subtle">
+    <div className="col-md d-flex mb-4 mt-2">
+      <div className="card w-100 m-1 bg-success-subtle d-flex flex-column">
         <img src={albumData.image} className="card-img-top" alt="#" />
-        <div className="card-body">
+        <div className="card-body d-flex flex-column">
           <div className="card-title">
             {albumData.artist} : {albumData.album}
           </div>
-          <div className="card-text">
+          <div className="card-text flex-grow-1">
             {albumData.description}
-            <br></br>
+            <br />
           </div>
         </div>
       </div>

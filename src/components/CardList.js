@@ -95,8 +95,8 @@ function CardList() {
   }, [albums]);
 
   return (
-    <div className="col-12">
-      <div className="row">
+    <div className="container">
+      <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4">
         {albums &&
           albums.map((album) => {
             return <AlbumCard albumData={album} key={album.id} />;
